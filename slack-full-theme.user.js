@@ -60,19 +60,19 @@ function applyColors(colors){
     style.type = 'text/css';
     style.id = 'fullThemePlugin';
     var rgbText = hexToRgb(colors[5]);
-    var rgbHover = hexToRgb(colors[0]);
+    var rgbHover = hexToRgb(colors[4]);
 
     //header & footer styles
     style.innerHTML = '#client_header .channel_header .channel_name_container .channel_name{color:'+colors[5]+'}' +
-        '#header{ background:'+colors[1]+'}' +
-        '.channel_header_refresh #client_body:not(.onboarding):before{ background:'+colors[4]+'}' +
-        '#messages_container.header_refresh.has_top_messages_banner:before{ background:'+colors[4]+'}' +
-        '#client_header .channel_header #channel_header_info{ background:'+colors[4]+'}' +
-        '#client_header .channel_header .channel_title_info{ background:'+colors[4]+'}' +
-        '#client_header .channel_header .flex_header{ background:'+colors[4]+'}' +
-        '#end_div{background:'+colors[4]+'}' +
-        '#channel_members_toggle{ background:'+colors[4]+'}'+
-        '#footer{background:'+colors[4]+'}'+
+        '#header{ background:'+colors[0]+'}' +
+        '.channel_header_refresh #client_body:not(.onboarding):before{ background:'+colors[0]+'}' +
+        '#messages_container.header_refresh.has_top_messages_banner:before{ background:'+colors[0]+'}' +
+        '#client_header .channel_header #channel_header_info{ background:'+colors[0]+'}' +
+        '#client_header .channel_header .channel_title_info{ background:'+colors[0]+'}' +
+        '#client_header .channel_header .flex_header{ background:'+colors[0]+'}' +
+        '#end_div{background:'+colors[0]+'}' +
+        '#channel_members_toggle{ background:'+colors[0]+'}'+
+        '#footer{background:'+colors[0]+'}'+
         '#primary_file_button.active, #primary_file_button:hover{background:'+colors[2]+';color:'+colors[3]+';border-color:'+colors[2]+'}'+
         '#client_header .channel_header #header_search_form .search_input{background:#fff !important}'+
         '#client_header .channel_header #header_search_form:hover .search_input{border-color:'+colors[2]+'}'+
@@ -80,12 +80,12 @@ function applyColors(colors){
         '#client_header .channel_header .blue_hover:hover{color:'+colors[2]+'}'+
         '#client_header .channel_header #search_container .search_form .icon_search{z-index:5}';
 
-    //divier styles
-    style.innerHTML += '.day_divider .day_divider_label{background:'+colors[5]+';color:'+colors[2]+'}';
+    //divider styles
+    style.innerHTML += '.day_divider .day_divider_label{background:'+colors[2]+';color:'+colors[3]+'}';
 
     //messages styles
-    style.innerHTML += '.msgs_holder{background:'+colors[4]+'}'+
-        'ts-message .bot_label{background:'+colors[4]+'}' +
+    style.innerHTML += '.msgs_holder{background:'+colors[0]+'}'+
+        'ts-message .bot_label{background:'+colors[0]+'}' +
         '.mention{color:'+colors[3]+';background:'+colors[7]+'!important}' +
         '.bot_message .message_sender, .bot_message .message_sender a{color:'+colors[5]+' !important}' +
         '.light_theme ts-message .message_content .member{color:'+colors[5]+' !important}' +
@@ -101,7 +101,7 @@ function applyColors(colors){
         '#msgs_div .unread_divider .divider_label{color:'+colors[2]+' !important}';
 
     //Global Styles
-    style.innerHTML += 'body{background:'+colors[4]+'}';
+    style.innerHTML += 'body{background:'+colors[0]+'}';
 
     //scroll bar styles
     style.innerHTML += '.monkey_scroll_bar{background:'+colors[1]+'!important}' +
@@ -151,4 +151,5 @@ function hexToRgb(hex) {
         b: parseInt(result[3], 16)
     } : null;
 }
+
 
